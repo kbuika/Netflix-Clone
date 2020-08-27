@@ -1,4 +1,4 @@
-# Netflix UI cLONE
+# Netflix UI Clone
 
 This is a UI clone that utilises the TMDB API to create a layout that is similar to that of Netflix.
 
