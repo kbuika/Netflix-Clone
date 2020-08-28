@@ -46,12 +46,27 @@
   transition: all 0.2s;
 }
 
+.banner__ratingDiv {
+  width: 2.5em;
+  height: 2.5em;
+  color: white;
+  background-color: #111111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating {
+  font-weight: 700;
+}
+
 .banner__fadeBottom {
   height: 7.4rem;
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(37, 37, 37, 0.61),
+    rgba(37, 37, 37, 0.76),
     #111111
   );
 }
@@ -91,6 +106,18 @@
     padding-top: 0.5rem;
     background-color: rgba(151, 137, 137, 0.5);
     padding-bottom: 0.5rem;
+  }
+
+  .banner__ratingDiv {
+    width: 2em;
+    height: 2em;
+    color: white;
+    background-color: #111111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1em;
   }
 
   .banner__fadeBottom {

@@ -50,15 +50,20 @@ function Row({ title, fetchUrl, isLargeRow }) {
       <div className="row__posters">
         {movies.map((movie) => {
           return (
-            <img
-              key={movie.id}
-              //   onClick={() => handleClick(movie)}
-              src={`${imageBaseUrl}${
-                isLargeRow ? movie.poster_path : movie.poster_path
-              }`}
-              alt={movie.name}
-              className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-            />
+            <div className="poster__div" key={movie.id}>
+              <img
+                //   onClick={() => handleClick(movie)}
+                src={`${imageBaseUrl}${
+                  isLargeRow ? movie.poster_path : movie.poster_path
+                }`}
+                alt={movie.name}
+                className="row__poster"
+              />
+              <div className="caption">
+                {" "}
+                <p className="ratings">{movie.vote_average}</p>
+              </div>
+            </div>
           );
         })}
       </div>
