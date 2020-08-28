@@ -47,6 +47,9 @@ function Banner() {
         <h1 className="banner__description">
           {truncate(movie?.overview, 150)}
         </h1>
+        <div className="banner__ratingDiv">
+          <p className="rating">{movie?.vote_average}</p>
+        </div>
       </div>
       <div className="banner__fadeBottom"></div>
     </header>
